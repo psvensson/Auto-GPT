@@ -3,7 +3,7 @@ FROM python:3.11-slim
 
 # Install git
 RUN apt-get -y update
-RUN apt-get -y install git libglib2.0 libnss3 libgconf-2-4 libfontconfig1 chromium-driver
+RUN apt-get -y install git libgconf-2-4 libfontconfig1 chromium-driver
 
 # Install Xvfb and other dependencies for headless browser testing
 RUN apt-get update \
